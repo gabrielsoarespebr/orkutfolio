@@ -1,0 +1,28 @@
+.aside a {
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    gap: .3em;
+}
+
+.aside a img,
+.aside nav img {
+    object-fit: contain;
+    width: 2em;
+
+    margin: 0 .3em;
+}
+
+.aside a p,
+.aside nav p {
+    color: var(--blueDark);
+
+    font-size: 90%;
+    font-weight: 500;
+}
+
+.navbar li {
+    background-color: var(--turquoisePastel);
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+.descriptionContainer ul img{
+    width: 1.5em;
+}
+
+.descriptionContainer table tr:nth-child(odd){
+    background-color: var(--blueLight);
+}
+
+.descriptionContainer table tr:nth-child(even){
+    background-color: var(--turquoisePastel);
+}

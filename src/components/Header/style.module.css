@@ -1,0 +1,8 @@
+.header {
+    height: 5.5vh;
+    background: linear-gradient(var(--blueDark), var(--blueMedium), var(--blueDark));
+}
+
+.logoBg {
+    background: linear-gradient(white 60%, var(--grayMedium));
+}

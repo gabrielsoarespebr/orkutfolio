@@ -1,0 +1,40 @@
+@import url('https://fonts.cdnfonts.com/css/edit-undo-brk');
+
+:root {
+  --turquoisePastel: #EFF7FF;
+  
+  --blueLight: #DAE7F7;
+  --blueMedium: #749CCF;
+  --blueDark: #347ebe;
+
+  --pinkMedium: #E95B95;
+
+  --grayLight: #f4f4f4;
+  --grayMedium: #9b9b9b;
+  --grayDark: #7b7b7b;
+}
+
+body {
+  background-color: var(--blueLight);
+  font-size: .7em;
+}
+
+.textBlue {
+  color: var(--blueDark);
+}
+
+.textGray {
+  color: var(--grayDark);
+}
+
+.textfs80perc {
+  font-size: 80%;
+}
+
+.heightFitContent{
+  height: fit-content;
+}
+
+hr {
+  margin: 1vh 0;
+}

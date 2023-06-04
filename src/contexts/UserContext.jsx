@@ -1,0 +1,550 @@
+import { createContext } from "react";
+
+export const UserContext = createContext();
+
+export const UserProvider = ({ children }) => {
+    const data = {
+        username: 'Gabriel Soares',
+        currentPlace: 'Olinda-PE, Brasil',
+        description: 'Desenvolvedor front-end React capaz de impulsionar seu produto/serviço de forma autêntica e criativa, simplificando a vida dos usuários tanto em sites quanto aplicativos',
+        skills: [{
+            title: "React",
+            logo: "https://img.icons8.com/color/144/react-native.png"
+        },
+        {
+            title: "Bootstrap",
+            logo: "https://img.icons8.com/color/144/bootstrap.png"
+        },
+        {
+            title: "JavaScript",
+            logo: "https://img.icons8.com/color/144/javascript--v1.png"
+        },
+        {
+            title: "Python",
+            logo: "https://img.icons8.com/color/144/python--v1.png"
+        },
+        {
+            title: "HTML",
+            logo: "https://img.icons8.com/color/144/html-5--v1.png"
+        },
+        {
+            title: "CSS",
+            logo: "https://img.icons8.com/color/144/css3.png"
+        }
+        ],
+        projects: [{
+            title: "Oferta Musical",
+            logo: "https://github.com/gabrielsoarespebr/oferta-musical/blob/master/src/assets/favicon/ofertamusicalBRASAO.png?raw=true",
+            website: "https://ofertamusical.vercel.app"
+        },
+        {
+            title: "Better Call Saul",
+            logo: "https://github.com/gabrielsoarespebr/better-call-saul/blob/master/src/assets/images/BetterCallSaulLogo.png?raw=true",
+            website: "https://bettercallsaul.vercel.app"
+        },
+        {
+            title: "Nostalgic Colors",
+            logo: "https://github.com/gabrielsoarespebr/nostalgic-colors/blob/master/src/assets/icons/favIcon.png?raw=true",
+            website: "https://nostalgiccolors.vercel.app"
+        }],
+        communication: {
+            languages: ["Português", "Inglês", "Libras"]
+        },
+        socialMedia: {
+            linkedin: "https://www.linkedin.com/in/gabrielsoarespebr/",
+            github: "https://github.com/gabrielsoarespebr"
+        },
+        competitiveProgramming: {
+            hackerrank: "https://www.hackerrank.com/gabrielsoaresbr?hr_r=1",
+            codeforces: "https://codeforces.com/profile/gabrielsoarespebr"
+        },
+        educationalBackground: [
+            {
+                title: 'Desenvolvimento Front-End',
+                organization: 'Ada Tech',
+                completed: true,
+                yearOfCompletion: 2023
+            },
+            {
+                title: 'Meta React Basics',
+                organization: 'Coursera',
+                completed: true,
+                yearOfCompletion: 2023
+            },
+            {
+                title: 'Análise e Desenvolvimento de Sistemas',
+                organization: 'IFPE',
+                completed: false,
+                yearOfCompletion: 2025
+            }
+        ],
+        certifications: [
+            {
+                title: 'Controlling CSS with JavaScript',
+                organization: 'LinkedIn',
+                tags: ['js', 'css', 'prog', 'tech']
+            },
+            {
+                title: 'Grammar Foundations (2014)',
+                organization: 'LinkedIn',
+                tags: ['eng', 'comm']
+            },
+            {
+                title: 'Programming Foundations: Object-Oriented Design',
+                organization: 'LinkedIn',
+                tags: ['oop', 'prog', 'tech']
+            },
+            {
+                title: 'Small Talk for Non-Native English Speakers',
+                organization: 'LinkedIn',
+                tags: ['eng', 'pubspeak', 'comm']
+            },
+            {
+                title: 'Bootstrap 5 Essential Training',
+                organization: 'LinkedIn',
+                tags: ['bootstrap', 'css', 'prog', 'tech']
+            },
+            {
+                title: 'Front End React',
+                organization: 'Ada Tech',
+                tags: ['react', 'prog', 'tech']
+            },
+            {
+                title: 'HTML Essential Training',
+                organization: 'LinkedIn',
+                tags: ['html', 'prog', 'tech']
+            },
+            {
+                title: 'Meta React Basics',
+                organization: 'Coursera',
+                tags: ['react', 'prog', 'tech']
+            },
+            {
+                title: 'Piano Lessons: 1 Fundamentals',
+                organization: 'LinkedIn',
+                tags: ['music', 'piano']
+            },
+            {
+                title: 'React.js Code Challenges',
+                organization: 'LinkedIn',
+                tags: ['react', 'prog', 'tech']
+            },
+            {
+                title: 'Residência Onboard',
+                organization: 'Porto Digital',
+                tags: ['js', 'html', 'css', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Figma Essential Training: The Basics',
+                organization: 'LinkedIn',
+                tags: ['figma', 'wireframe']
+            },
+            {
+                title: 'Hands-On Introduction: React',
+                organization: 'LinkedIn',
+                tags: ['react', 'prog', 'tech']
+            },
+            {
+                title: 'React.js Essential Training',
+                organization: 'LinkedIn',
+                tags: ['react', 'prog', 'tech']
+            },
+            {
+                title: 'React.js: Building an Interface',
+                organization: 'LinkedIn',
+                tags: ['react', 'prog', 'tech']
+            },
+            {
+                title: 'How to Talk to Anyone (Blinkist Summary)',
+                organization: 'LinkedIn',
+                tags: ['eng', 'pubspeak', 'comm']
+            },
+            {
+                title: 'Inglês Comercial: Como Escrever E-mails Empresariais Bem-Sucedidos',
+                organization: 'LinkedIn',
+                tags: ['eng', 'comm']
+            },
+            {
+                title: 'Inglês Comercial: Como Impressionar em Entrevistas de Emprego On-line',
+                organization: 'LinkedIn',
+                tags: ['eng', 'comm']
+            },
+            {
+                title: 'JavaScript Code Challenges',
+                organization: 'LinkedIn',
+                tags: ['js', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'JavaScript Essential Training',
+                organization: 'LinkedIn',
+                tags: ['js', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'JavaScript and AJAX: Integration Techniques',
+                organization: 'LinkedIn',
+                tags: ['js', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'JavaScript: Arrays',
+                organization: 'LinkedIn',
+                tags: ['js', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Leadership Communication',
+                organization: 'FIAP',
+                tags: ['pubspeak', 'comm', 'lead', 'bus']
+            },
+            {
+                title: 'Learning ECMAScript 6+ (ES6+)',
+                organization: 'LinkedIn',
+                tags: ['js', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Public Speaking for Non-Native English Speakers',
+                organization: 'LinkedIn',
+                tags: ['eng', 'pubspeak', 'comm']
+            },
+            {
+                title: 'User Experience',
+                organization: 'FIAP',
+                tags: ['ux', 'access', 'tech']
+            },
+            {
+                title: 'Começando na Biblioteca React',
+                organization: 'DIO',
+                tags: ['react', 'prog', 'tech']
+            },
+            {
+                title: 'Construindo uma Pokédex com JavaScript',
+                organization: 'DIO',
+                tags: ['js', 'html', 'css', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Conversação em inglês com nativos (21 horas)',
+                organization: 'Cambly Inc.',
+                tags: ['eng', 'pubspeak', 'comm']
+            },
+            {
+                title: 'Criando Uma Calculadora Com React',
+                organization: 'DIO',
+                tags: ['react', 'css', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Dominando Algoritmos Intermediários com Desafios de Código JavaScript',
+                organization: 'DIO',
+                tags: ['js', 'prog', 'algo']
+            },
+            {
+                title: 'Educação dos surdos em 2023',
+                organization: 'Universidade Federal de Campina Grande',
+                tags: ['signlang', 'access', 'edu', 'comm']
+            },
+            {
+                title: 'Estudo descritivo das interjeições da Libras e A diferença de tradução e transcrição signwriting da literatura surda',
+                organization: 'Universidade Federal de Campina Grande',
+                tags: ['signlang', 'access', 'comm']
+            },
+            {
+                title: 'Orange Tech +',
+                organization: 'DIO',
+                tags: ['java', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Arrays e Estruturas de Repetição em JavaScript',
+                organization: 'DIO',
+                tags: ['js', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Configuração de Ambiente React',
+                organization: 'DIO',
+                tags: ['react', 'prog', 'tech']
+            },
+            {
+                title: 'Conhecendo Funções JavaScript',
+                organization: 'DIO',
+                tags: ['js', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Criando Objetos e Classes em JavaScript',
+                organization: 'DIO',
+                tags: ['js', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Criando um Projeto com HTML/CSS para Listagem de Pokémon',
+                organization: 'DIO',
+                tags: ['js', 'html', 'css', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Dominando o Protocolo HTTP e Integrando com a PokeAPI',
+                organization: 'DIO',
+                tags: ['prog', 'algo', 'tech']
+            },
+            {
+                title: 'Estilização com Styled-Components',
+                organization: 'DIO',
+                tags: ['react', 'css', 'prog', 'tech']
+            },
+            {
+                title: 'Importação e Exportação com JavaScript',
+                organization: 'DIO',
+                tags: ['js', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Iniciando um Projeto com React CLI e Navegação',
+                organization: 'DIO',
+                tags: ['react', 'prog', 'tech']
+            },
+            {
+                title: 'Introdução ao Desenvolvimento Web com JavaScript',
+                organization: 'DIO',
+                tags: ['js', 'html', 'css', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Primeiros Passos Com JavaScript',
+                organization: 'DIO',
+                tags: ['js', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Primeiros Passos na Biblioteca React',
+                organization: 'DIO',
+                tags: ['react', 'prog', 'tech']
+            },
+            {
+                title: 'Trabalhando Com Formulários no React',
+                organization: 'DIO',
+                tags: ['react', 'prog', 'tech']
+            },
+            {
+                title: 'Trabalhando Com Hooks Básicos',
+                organization: 'DIO',
+                tags: ['react', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Abstraindo um Bootcamp Usando Orientação a Objetos em Java',
+                organization: 'Digital Innovation One Inc.',
+                tags: ['java', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Debugging Java',
+                organization: 'Digital Innovation One Inc.',
+                tags: ['java', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Deixando Seu LinkedIn Atrativo',
+                organization: 'DIO',
+                tags: ['persbrand']
+            },
+            {
+                title: 'Estruturas de Repetição e Arrays em Java',
+                organization: 'Digital Innovation One Inc.',
+                tags: ['java', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Java Collections',
+                organization: 'Digital Innovation One Inc.',
+                tags: ['java', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Lógica Condicional e Controle de Fluxos em Java',
+                organization: 'Digital Innovation One Inc.',
+                tags: ['java', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Métodos Java',
+                organization: 'Digital Innovation One Inc.',
+                tags: ['java', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Potência Tech Java Beginners',
+                organization: 'DIO',
+                tags: ['java', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Programação Orientada a Objetos',
+                organization: 'Digital Innovation One Inc.',
+                tags: ['prog', 'algo', 'tech']
+            },
+            {
+                title: 'Se Preparando Para Uma Entrevista',
+                organization: 'DIO',
+                tags: ['pubspeak', 'comm']
+            },
+            {
+                title: 'Sintaxe Java',
+                organization: 'Digital Innovation One Inc.',
+                tags: ['java', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Tratamento de Exceções em Java',
+                organization: 'Digital Innovation One Inc.',
+                tags: ['java', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Introdução ao Desenvolvimento Moderno de Software',
+                organization: 'Digital Innovation One Inc.',
+                tags: ['prog', 'algo', 'tech']
+            },
+            {
+                title: 'Introdução à Plataforma Java',
+                organization: 'Digital Innovation One Inc.',
+                tags: ['java', 'prog', 'tech']
+            },
+            {
+                title: 'Introdução à Programação e Pensamento Computacional',
+                organization: 'Digital Innovation One Inc.',
+                tags: ['prog', 'algo', 'tech']
+            },
+            {
+                title: 'Responsive Web Design',
+                organization: 'freeCodeCamp',
+                tags: ['html', 'css', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Construindo jogo de naves (Projeto)',
+                organization: 'Digital Innovation One Inc.',
+                tags: ['js', 'html', 'css', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'JavaScript ES6 Essencial',
+                organization: 'Digital Innovation One Inc.',
+                tags: ['js', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Recriando a Interface do Netflix (Projeto)',
+                organization: 'Digital Innovation One Inc.',
+                tags: ['html', 'css', 'prog', 'tech']
+            },
+            {
+                title: 'Comunicação Não Violenta (CNV)',
+                organization: 'OAB SP',
+                tags: ['jur', 'pubspeak', 'comm']
+            },
+            {
+                title: 'Da advocacia à docência em direito com sucesso',
+                organization: 'OAB SP',
+                tags: ['jur', 'edu']
+            },
+            {
+                title: 'Identity',
+                organization: 'Deloitte',
+                tags: ['cybersec', 'tech']
+            },
+            {
+                title: 'Incident Response',
+                organization: 'Deloitte',
+                tags: ['cybersec', 'tech']
+            },
+            {
+                title: 'Introdução à criação de websites com HTML5 e CSS3',
+                organization: 'Digital Innovation One Inc.',
+                tags: ['html', 'css', 'prog', 'tech']
+            },
+            {
+                title: 'Programação para internet com JavaScript',
+                organization: 'Digital Innovation One Inc.',
+                tags: ['js', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'Recriando a página inicial do Instagram (Projeto)',
+                organization: 'Digital Innovation One Inc.',
+                tags: ['html', 'css', 'prog', 'tech']
+            },
+            {
+                title: 'Responsividade e UX Design',
+                organization: 'Digital Innovation One Inc.',
+                tags: ['ux', 'prog', 'tech']
+            },
+            {
+                title: 'Trilha Conectar - Fundamentos da programação, software, hardware, internet e servidores',
+                organization: 'Rocketseat',
+                tags: ['prog', 'algo', 'tech']
+            },
+            {
+                title: 'Diferenças e semelhanças entre GDPR e LGPD',
+                organization: 'OAB SP',
+                tags: ['jur']
+            },
+            {
+                title: '20 anos da Lei de Libras: uma história de resistência',
+                organization: 'Universidade Federal de Campina Grande',
+                tags: ['signlang', 'access', 'comm']
+            },
+            {
+                title: 'A lexicografia da Libras na educação dos surdos e A atuação do TILS em debates políticos e campanhas eleitorais',
+                organization: 'Universidade Federal de Campina Grande',
+                tags: ['signlang', 'access', 'edu', 'comm']
+            },
+            {
+                title: 'Educação de surdos no Brasil e Produções culturais do povo surdo',
+                organization: 'Universidade Federal de Campina Grande',
+                tags: ['signlang', 'access', 'edu', 'comm']
+            },
+            {
+                title: 'O que é linguística e linguagem?',
+                organization: 'Universidade Federal de Campina Grande',
+                tags: ['signlang', 'access', 'comm']
+            },
+            {
+                title: 'Reflexões sobre a escrita acadêmica dos estudantes surdos e Antropomorfismo em Libras',
+                organization: 'Universidade Federal de Campina Grande',
+                tags: ['signlang', 'access', 'edu', 'comm']
+            },
+            {
+                title: 'Tipologia linguística da Libras e Interpretação de descrições imagéticas',
+                organization: 'Universidade Federal de Campina Grande',
+                tags: ['signlang', 'access', 'comm']
+            },
+            {
+                title: 'Libras: que língua é essa?',
+                organization: 'Universidade Federal de Campina Grande',
+                tags: ['signlang', 'access', 'comm']
+            },
+            {
+                title: 'Responsabilidade Civil dos Médicos, Planos de Saúde e Hospitais',
+                organization: 'OAB SP',
+                tags: ['jur']
+            },
+            {
+                title: 'Curso Técnico em Tradução e Interpretação de LIBRAS',
+                organization: 'ETEPAM - Escola Técnica Estadual Professor Agamenon Magalhães',
+                tags: ['signlang', 'access', 'comm']
+            },
+            {
+                title: 'Libras: compreensão básica',
+                organization: 'IFRS',
+                tags: ['signlang', 'access', 'comm']
+            },
+            {
+                title: 'Advocacia Racial',
+                organization: 'OAB SP',
+                tags: ['jur']
+            },
+            {
+                title: 'Competências Profissionais, Emocionais e Tecnológicas para Tempos de Mudança',
+                organization: 'PUCRS - Pontifícia Universidade Católica do Rio Grande do Sul',
+                tags: ['persbrand']
+            },
+            {
+                title: 'Introdução à Libras',
+                organization: 'Escola Nacional de Administração Pública ENAP',
+                tags: ['signlang', 'access', 'comm']
+            },
+            {
+                title: 'Mediação no Âmbito da Administração Pública',
+                organization: 'Procuradoria Geral do Município de Olinda',
+                tags: ['jur']
+            },
+            {
+                title: 'Noções de Processo Civil',
+                organization: 'Advocacia-Geral da União (AGU)',
+                tags: ['jur']
+            }
+        ]
+    }
+
+    return (
+        <UserContext.Provider value={data}>
+            {children}
+        </UserContext.Provider>
+    )
+}
