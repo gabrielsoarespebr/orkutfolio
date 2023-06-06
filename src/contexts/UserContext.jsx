@@ -55,8 +55,8 @@ export const UserProvider = ({ children }) => {
             github: "https://github.com/gabrielsoarespebr"
         },
         competitiveProgramming: {
-            hackerrank: "https://www.hackerrank.com/gabrielsoaresbr?hr_r=1",
-            codeforces: "https://codeforces.com/profile/gabrielsoarespebr"
+            codeforces: "https://codeforces.com/profile/gabrielsoarespebr",
+            hackerrank: "https://www.hackerrank.com/gabrielsoaresbr?hr_r=1"
         },
         educationalBackground: [
             {
@@ -78,6 +78,12 @@ export const UserProvider = ({ children }) => {
                 yearOfCompletion: 2025
             }
         ],
+        workExperience: [
+            {
+                title: 'React Developer',
+                organization: 'Autônomo',
+                dateStartEnd: ['março de 2022']
+            }],
         certifications: [
             {
                 title: 'Controlling CSS with JavaScript',
@@ -538,6 +544,16 @@ export const UserProvider = ({ children }) => {
                 title: 'Noções de Processo Civil',
                 organization: 'Advocacia-Geral da União (AGU)',
                 tags: ['jur']
+            }
+        ],
+        testimonials: [
+            {
+                text: 'Gabriel, meu amigo e colega de estudo sempre empenhado em resolver problemas e a enfrentar desafios. Disposicão e animo andam ao lado em todo o tempo de estudo e trabalho. Tenho certeza que ele irá conseguir transpor as muralhas à sua frente, e terei o enorme prazer de lhe falar PARABÉNS!',
+                author: {
+                    name: 'Thiago Lins',
+                    photo: 'https://avatars.githubusercontent.com/u/55138607?v=4',
+                    url: 'https://github.com/tplins'
+                }
             }
         ]
     }
