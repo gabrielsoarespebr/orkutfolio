@@ -24,7 +24,7 @@ export const Certifications = () => {
     }, [certificationMaxAmount, certificationSelection]);
 
     return (
-        <div className={`bg-white p-2 rounded shadow-sm my-2 ${style.certifications}`}>
+        <div className={`bg-white p-2 rounded shadow-sm mt-2 ${style.certifications}`}>
             <p className='fw-semibold mb-1'>certificados <span className="textBlue">({certificationSelection.length})</span></p>
             <input className='col-12' type="text" placeholder='pesquisa do orkut' onChange={handleSearch} />
             <hr />

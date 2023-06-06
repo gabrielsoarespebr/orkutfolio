@@ -13,7 +13,7 @@ function App() {
     <>
       <UserProvider>
         <Header />
-        <main className='m-2 me-3 d-flex gap-1'>
+        <main className='m-2 me-3 d-flex gap-1 pb-2'>
           <AsideNav />
           <div className='col-10 d-flex gap-1'>
             <div className='col-8 d-flex flex-column gap-1'>

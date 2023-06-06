@@ -62,27 +62,24 @@ export const UserProvider = ({ children }) => {
             {
                 title: 'Desenvolvimento Front-End',
                 organization: 'Ada Tech',
-                completed: true,
-                yearOfCompletion: 2023
+                dateStartEnd: ['dez/2022','abr/2023']
             },
             {
                 title: 'Meta React Basics',
                 organization: 'Coursera',
-                completed: true,
-                yearOfCompletion: 2023
+                dateStartEnd: ['mar/2023','abr/2023']
             },
             {
                 title: 'Análise e Desenvolvimento de Sistemas',
                 organization: 'IFPE',
-                completed: false,
-                yearOfCompletion: 2025
+                dateStartEnd: ['mar/2022','jun/2025']
             }
         ],
         workExperience: [
             {
                 title: 'React Developer',
                 organization: 'Autônomo',
-                dateStartEnd: ['março de 2022']
+                dateStartEnd: ['mar/2022']
             }],
         certifications: [
             {
