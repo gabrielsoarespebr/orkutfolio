@@ -12,7 +12,7 @@ export const Testimonials = () => {
                     <li className='list-group-item p-2 d-flex justify-content-around gap-2' key={key}>
                         <img src={e.author.photo} alt="Testimonial author" />
                         <div className='col-9'>
-                            <a href={e.author.url} className='textBlue fw-semibold text-decoration-none'>{e.author.name}</a>
+                            <a href={e.author.url} target='_blank' className='textBlue fw-semibold text-decoration-none'>{e.author.name}</a>
                             <p>
                                 {e.text}
                             </p>
