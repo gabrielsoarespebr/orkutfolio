@@ -12,6 +12,10 @@ export const UserProvider = ({ children }) => {
             logo: "https://img.icons8.com/color/144/react-native.png"
         },
         {
+            title: "Tailwind",
+            logo: "https://img.icons8.com/color/144/tailwind_css.png"
+        },
+        {
             title: "Bootstrap",
             logo: "https://img.icons8.com/color/144/bootstrap.png"
         },
@@ -20,16 +24,24 @@ export const UserProvider = ({ children }) => {
             logo: "https://img.icons8.com/color/144/javascript--v1.png"
         },
         {
-            title: "Python",
-            logo: "https://img.icons8.com/color/144/python--v1.png"
-        },
-        {
             title: "HTML",
             logo: "https://img.icons8.com/color/144/html-5--v1.png"
         },
         {
             title: "CSS",
             logo: "https://img.icons8.com/color/144/css3.png"
+        },
+        {
+            title: "Python",
+            logo: "https://img.icons8.com/color/144/python--v1.png"
+        },
+        {
+            title: "SQL",
+            logo: "https://cdn-icons-png.flaticon.com/512/4299/4299956.png"
+        },
+        {
+            title: "Figma",
+            logo: "https://img.icons8.com/color/144/figma--v1.png"
         }
         ],
         projects: [{
@@ -62,17 +74,17 @@ export const UserProvider = ({ children }) => {
             {
                 title: 'Desenvolvimento Front-End',
                 organization: 'Ada Tech',
-                dateStartEnd: ['dez/2022','abr/2023']
+                dateStartEnd: ['dez/2022', 'abr/2023']
             },
             {
                 title: 'Meta React Basics',
                 organization: 'Coursera',
-                dateStartEnd: ['mar/2023','abr/2023']
+                dateStartEnd: ['mar/2023', 'abr/2023']
             },
             {
                 title: 'Análise e Desenvolvimento de Sistemas',
                 organization: 'IFPE',
-                dateStartEnd: ['mar/2022','jun/2025']
+                dateStartEnd: ['mar/2022', 'jun/2025']
             }
         ],
         workExperience: [
@@ -82,6 +94,41 @@ export const UserProvider = ({ children }) => {
                 dateStartEnd: ['mar/2022']
             }],
         certifications: [
+            {
+                title: 'CSS Essential Training',
+                organization: 'LinkedIn',
+                tags: ['css', 'prog', 'tech']
+            },
+            {
+                title: 'Flutter Essential Training: Build for Multiple Platforms',
+                organization: 'LinkedIn',
+                tags: ['fluttler', 'dart', 'prog', 'mobile', 'tech']
+            },
+            {
+                title: 'Fundamentos de Programação: Algoritmos',
+                organization: 'LinkedIn',
+                tags: ['prog', 'algo', 'tech']
+            },
+            {
+                title: 'Python Essential Training',
+                organization: 'LinkedIn',
+                tags: ['python', 'prog', 'algo', 'tech']
+            },
+            {
+                title: 'React Native Essential Training',
+                organization: 'LinkedIn',
+                tags: ['rn', 'prog', 'mobile', 'tech']
+            },
+            {
+                title: 'SQL Essential Training',
+                organization: 'LinkedIn',
+                tags: ['sql', 'prog', 'tech']
+            },
+            {
+                title: 'Writing Emails for Non-Native English Speakers',
+                organization: 'LinkedIn',
+                tags: ['eng', 'comm', 'bus']
+            },
             {
                 title: 'Controlling CSS with JavaScript',
                 organization: 'LinkedIn',
