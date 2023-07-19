@@ -6,7 +6,7 @@ export const UserProvider = ({ children }) => {
     const data = {
         username: 'Gabriel Soares',
         currentPlace: 'Olinda-PE, Brasil',
-        description: 'Desenvolvedor front-end React capaz de impulsionar seu produto/serviço de forma autêntica e criativa, simplificando a vida dos usuários tanto em sites quanto aplicativos',
+        description: 'Desenvolvedor front-end React capaz de impulsionar seu produto/serviço de forma autêntica e criativa, simplificando a vida dos usuários. Nos bastidores: Compromisso com códigos limpos e otimizados, conforme as boas práticas de programação. Nos palcos: Proatividade, trabalho em equipe, além de comunicação clara e objetiva',
         skills: [{
             title: "React",
             logo: "https://img.icons8.com/color/144/react-native.png"
