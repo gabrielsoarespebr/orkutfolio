@@ -72,7 +72,7 @@ export const DescriptionContainer = () => {
                     <tr>
                         <td className='textGray col-4 text-end pe-2'>programação competitiva:</td>
                         <td>
-                            <a href={data.competitiveProgramming.codeforces} target='_blank'>CodeForces</a>, <a href={data.competitiveProgramming.hackerrank} target='_blank'>HackerRank</a>
+                            <a href={data.competitiveProgramming.codeforces} target='_blank'>CodeForces</a>, <a href={data.competitiveProgramming.hackerrank} target='_blank'>HackerRank</a>, <a href={data.competitiveProgramming.beecrowd} target='_blank'>BeeCrowd</a>
                         </td>
                     </tr>
                 </tbody>

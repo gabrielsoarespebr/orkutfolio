@@ -68,7 +68,8 @@ export const UserProvider = ({ children }) => {
         },
         competitiveProgramming: {
             codeforces: "https://codeforces.com/profile/gabrielsoarespebr",
-            hackerrank: "https://www.hackerrank.com/gabrielsoaresbr?hr_r=1"
+            hackerrank: "https://www.hackerrank.com/gabrielsoaresbr?hr_r=1",
+            beecrowd: "https://www.beecrowd.com.br/judge/pt/profile/754752"
         },
         educationalBackground: [
             {
