@@ -2,6 +2,7 @@ import style from './style.module.css'
 import profilePhoto from '../../assets/images/profilePhoto.png'
 import { useContext } from 'react'
 import { UserContext } from '../../contexts/UserContext'
+import { Link } from "react-router-dom";
 
 export const AsideNav = () => {
     const data = useContext(UserContext)
@@ -25,7 +26,7 @@ export const AsideNav = () => {
                     <li className='list-group-item p-0 d-flex align-items-center'>
                         <img width="48" height="48" src="https://img.icons8.com/fluency/48/guest-male.png" alt="guest-male" />
                         <p>
-                            Perfil
+                            <Link className='text-reset' to='/'>Perfil</Link>
                         </p>
                     </li>
                     <li className='list-group-item p-0 d-flex align-items-center'>
@@ -37,13 +38,13 @@ export const AsideNav = () => {
                     <li className='list-group-item p-0 d-flex align-items-center'>
                         <img width="48" height="48" src="https://img.icons8.com/3d-fluency/94/camera.png" alt="camera" />
                         <p>
-                            Fotos
+                            <Link className='text-reset' to='/fotos'>Fotos</Link>
                         </p>
                     </li>
                     <li className='list-group-item p-0 d-flex align-items-center'>
                         <img width="48" height="48" src="https://img.icons8.com/3d-fluency/94/documentary.png" alt="documentary" />
                         <p>
-                            Vídeos
+                            <Link className='text-reset' to='/videos'>Vídeos</Link>
                         </p>
                     </li>
                     <li className='list-group-item p-0 d-flex align-items-center'>
@@ -54,6 +55,7 @@ export const AsideNav = () => {
                     </li>
                 </ul>
             </nav>
+
         </aside>
     )
 }
