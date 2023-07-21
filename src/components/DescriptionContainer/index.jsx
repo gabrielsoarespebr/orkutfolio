@@ -50,13 +50,13 @@ export const DescriptionContainer = () => {
                     <tr>
                         <td className='textGray col-4 text-end pe-2'>formação acadêmica:</td>
                         <td>{data.educationalBackground.map((course,key) =>
-                            <p>{++key}) {course.organization} - {course.title} ({course.dateStartEnd.join(' - ')})</p>
+                            <p key={key}>{++key}) {course.organization} - {course.title} ({course.dateStartEnd.join(' - ')})</p>
                         )}</td>
                     </tr>
                     <tr>
                         <td className='textGray col-4 text-end pe-2'>experiência profissional:</td>
                         <td>{data.workExperience.map((job,key) =>
-                            <p>{++key}) {job.organization} - {job.title} ({job.dateStartEnd[1] ? job.dateStartEnd.join(' - ') : job.dateStartEnd[0] + ' - atualmente'}) </p>
+                            <p key={key}>{++key}) {job.organization} - {job.title} ({job.dateStartEnd[1] ? job.dateStartEnd.join(' - ') : job.dateStartEnd[0] + ' - atualmente'}) </p>
                         )}</td>
                     </tr>
                     <tr>
