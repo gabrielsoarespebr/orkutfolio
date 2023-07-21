@@ -12,6 +12,7 @@ import { Videos } from './components/Videos';
 import { Home } from './components/Home';
 import { Photos } from './components/Photos';
 import { TestimonialsPage } from './components/TestimonialsPage';
+import { Scrap } from './components/Scrap';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <AsideNav />
             <Routes>
               <Route path='/' element={<Home />} />
+              <Route path='/recados' element={<Scrap/>} />
               <Route path='/fotos' element={<Photos />} />
               <Route path='/videos' element={<Videos />} />
               <Route path='/testimonials' element={<TestimonialsPage />} />

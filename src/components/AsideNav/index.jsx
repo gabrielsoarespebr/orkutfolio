@@ -32,7 +32,7 @@ export const AsideNav = () => {
                     <li className='list-group-item p-0 d-flex align-items-center'>
                         <img width="48" height="48" src="https://img.icons8.com/3d-fluency/94/mail.png" alt="mail" />
                         <p>
-                            Recados
+                            <Link className='text-reset' to='/recados'>Recados</Link>
                         </p>
                     </li>
                     <li className='list-group-item p-0 d-flex align-items-center'>
