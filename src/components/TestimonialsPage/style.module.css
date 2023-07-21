@@ -1,0 +1,9 @@
+.testimonials li {
+    background-color: var(--turquoisePastel);
+}
+
+.testimonials li img{
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+}

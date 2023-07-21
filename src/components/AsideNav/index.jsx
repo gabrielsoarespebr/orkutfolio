@@ -50,7 +50,7 @@ export const AsideNav = () => {
                     <li className='list-group-item p-0 d-flex align-items-center'>
                         <img width="48" height="48" src="https://img.icons8.com/3d-fluency/94/christmas-star.png" alt="christmas-star" />
                         <p>
-                            Depoimentos
+                            <Link className='text-reset' to='/testimonials'>Depoimentos</Link>
                         </p>
                     </li>
                 </ul>
