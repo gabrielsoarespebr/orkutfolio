@@ -1,8 +1,26 @@
 .header {
     height: 5.5vh;
     background: linear-gradient(var(--blueDark), var(--blueMedium), var(--blueDark));
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 1vw;
 }
 
 .logoBg {
     background: linear-gradient(white 60%, var(--grayMedium));
+}
+
+.resumeLink{
+    margin-right: 8em;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.resumeLink:hover{
+    color: white;
+    opacity: 90%;
 }
