@@ -40,8 +40,20 @@ export const UserProvider = ({ children }) => {
             logo: "https://cdn-icons-png.flaticon.com/512/4299/4299956.png"
         },
         {
+            title: "Git",
+            logo: "https://img.icons8.com/color/144/git.png"
+        },
+        {
             title: "Figma",
             logo: "https://img.icons8.com/color/144/figma--v1.png"
+        },
+        {
+            title: "Photoshop",
+            logo: "https://img.icons8.com/color/144/adobe-photoshop--v1.png"
+        },
+        {
+            title: "Canva",
+            logo: "https://img.icons8.com/color/144/canva.png"
         }
         ],
         projects: [{
