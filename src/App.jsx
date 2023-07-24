@@ -19,12 +19,12 @@ function App() {
     <>
       <UserProvider>
         <Header />
-        <main className='m-2 me-3 d-flex gap-1 pb-2'>
+        <main id='mainContent' className='pb-2'>
           <Router>
             <AsideNav />
             <Routes>
               <Route path='/' element={<Home />} />
-              <Route path='/recados' element={<Scrap/>} />
+              <Route path='/recados' element={<Scrap />} />
               <Route path='/fotos' element={<Photos />} />
               <Route path='/videos' element={<Videos />} />
               <Route path='/testimonials' element={<TestimonialsPage />} />

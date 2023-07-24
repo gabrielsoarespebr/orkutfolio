@@ -2,7 +2,7 @@
 
 :root {
   --turquoisePastel: #EFF7FF;
-  
+
   --blueLight: #DAE7F7;
   --blueMedium: #749CCF;
   --blueDark: #347ebe;
@@ -31,7 +31,25 @@ body {
   font-size: 80%;
 }
 
-.heightFitContent{
+#mainContent {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  gap: .5em;
+  
+  margin: .7em;
+  margin-right: 1.2em;
+}
+
+@media screen and (max-width: 420px) {
+  #mainContent {
+    display: flex;
+    flex-direction: column;
+    gap: .4em;
+  }
+}
+
+.heightFitContent {
   height: fit-content;
 }
 

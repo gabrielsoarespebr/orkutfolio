@@ -1,0 +1,9 @@
+.videos {
+    width: 83%;
+}
+
+@media screen and (max-width: 420px) {
+    .videos {
+        width: 100%;
+    }
+}

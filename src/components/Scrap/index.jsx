@@ -38,7 +38,7 @@ export const Scrap = () => {
 
     return (
 
-        <div className='col-10 heightFitContent bg-white p-2 rounded shadow-sm'>
+        <div className={`col-10 heightFitContent bg-white p-2 rounded shadow-sm ${style.scrap}`}>
             <p className='fw-semibold mb-1'>recados <span className="textBlue">(1)</span></p>
 
             <form className={style.form} onSubmit={sendEmail}>
@@ -46,7 +46,7 @@ export const Scrap = () => {
                     <input
                         className="input"
                         type="text"
-                        placeholder="Digite seu nome (Obrigatório)"
+                        placeholder="nome (obrigatório)"
                         onChange={(e) => setName(e.target.value)}
                         value={name}
                     />
@@ -54,7 +54,7 @@ export const Scrap = () => {
                     <input
                         className="input"
                         type="email"
-                        placeholder="Digite seu email (Obrigatório)"
+                        placeholder="e-mail (obrigatório)"
                         onChange={(e) => setEmail(e.target.value)}
                         value={email}
                     />
@@ -62,7 +62,7 @@ export const Scrap = () => {
                     <input
                         className="input"
                         type="text"
-                        placeholder="Digite seu LinkedIn (Opcional)"
+                        placeholder="linkedin (opcional)"
                         onChange={(e) => setLinkedin(e.target.value)}
                         value={linkedin}
                     />
@@ -70,7 +70,7 @@ export const Scrap = () => {
 
                 <textarea
                     className="textarea w-100"
-                    placeholder="Digite sua mensagem (Obrigatório)"
+                    placeholder="mensagem (obrigatório)"
                     onChange={(e) => setMessage(e.target.value)}
                     value={message}
                     style={{ resize: 'none' }}
@@ -81,10 +81,10 @@ export const Scrap = () => {
 
             <ul className={`list-unstyled ${style.scraps}`}>
                 <li className='list-group-item p-2 d-flex justify-content-around gap-2'>
-                    <img src={profilePhoto} alt="Message author" />
+                    <img className={style.authorPhoto} src={profilePhoto} alt="Message author" />
                     <div className='col-9'>
                         <p className='textBlue fw-semibold'>Gabriel Soares</p>
-                        <img className='w-auto h-auto m-5' src={scrap} alt="Scrap" />
+                        <img className={style.myScrap} src={scrap} alt="Scrap" />
                     </div>
                 </li>
             </ul>

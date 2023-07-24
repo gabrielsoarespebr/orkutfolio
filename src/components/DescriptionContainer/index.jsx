@@ -44,33 +44,33 @@ export const DescriptionContainer = () => {
             <table>
                 <tbody>
                     <tr>
-                        <td className='textGray col-4 text-end pe-2'>quem sou eu:</td>
+                        <td className='textGray col-4  pe-2'>quem sou eu:</td>
                         <td>{data.description}</td>
                     </tr>
                     <tr>
-                        <td className='textGray col-4 text-end pe-2'>formação acadêmica:</td>
-                        <td>{data.educationalBackground.map((course,key) =>
+                        <td className='textGray col-4  pe-2'>formação acadêmica:</td>
+                        <td>{data.educationalBackground.map((course, key) =>
                             <p key={key}>{++key}) {course.organization} - {course.title} ({course.dateStartEnd.join(' - ')})</p>
                         )}</td>
                     </tr>
                     <tr>
-                        <td className='textGray col-4 text-end pe-2'>experiência profissional:</td>
-                        <td>{data.workExperience.map((job,key) =>
+                        <td className='textGray col-4  pe-2'>experiência profissional:</td>
+                        <td>{data.workExperience.map((job, key) =>
                             <p key={key}>{++key}) {job.organization} - {job.title} ({job.dateStartEnd[1] ? job.dateStartEnd.join(' - ') : job.dateStartEnd[0] + ' - atualmente'}) </p>
                         )}</td>
                     </tr>
                     <tr>
-                        <td className='textGray col-4 text-end pe-2'>línguas:</td>
+                        <td className='textGray col-4  pe-2'>línguas:</td>
                         <td>{data.communication.languages.join(', ')}</td>
                     </tr>
                     <tr>
-                        <td className='textGray col-4 text-end pe-2'>redes sociais:</td>
+                        <td className='textGray col-4  pe-2'>redes sociais:</td>
                         <td>
                             <a href={data.socialMedia.linkedin} target='_blank'>Linkedin</a>, <a href={data.socialMedia.github} target='_blank'>Github</a>
                         </td>
                     </tr>
                     <tr>
-                        <td className='textGray col-4 text-end pe-2'>programação competitiva:</td>
+                        <td className='textGray col-4  pe-2'>programação competitiva:</td>
                         <td>
                             <a href={data.competitiveProgramming.codeforces} target='_blank'>CodeForces</a>, <a href={data.competitiveProgramming.hackerrank} target='_blank'>HackerRank</a>, <a href={data.competitiveProgramming.beecrowd} target='_blank'>BeeCrowd</a>
                         </td>

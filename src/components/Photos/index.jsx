@@ -10,7 +10,7 @@ import dojo2 from '../../assets/images/dojo2.png'
 
 export const Photos = () => {
     return (
-        <div className='col-10 heightFitContent bg-white p-2 rounded shadow-sm'>
+        <div className={`col-10 heightFitContent bg-white p-2 rounded shadow-sm ${style.photosContainer}`}>
             <p className='fw-semibold mb-1'>fotos <span className="textBlue">(4)</span></p>
             <div className='d-flex justify-content-center'>
                 <MDBCarousel className={`w-75 ${style.carousel}`} showIndicators showControls fade>

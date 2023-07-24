@@ -1,3 +1,4 @@
+import style from './style.module.css'
 import { DescriptionContainer } from '../DescriptionContainer'
 import { Projects } from '../Projects'
 import { Skills } from '../Skills'
@@ -7,7 +8,7 @@ import { BuddyPoke } from '../BuddyPoke'
 
 export const Home = () => {
     return (
-        <div className='col-10 d-flex gap-1'>
+        <div className={`col-10 d-flex gap-1 ${style.home}`}>
             <div className='col-8 d-flex flex-column gap-1'>
                 <DescriptionContainer />
                 <Testimonials />

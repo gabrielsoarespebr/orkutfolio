@@ -8,19 +8,21 @@ export const AsideNav = () => {
     const data = useContext(UserContext)
     return (
         <aside className={`col-2 heightFitContent bg-white p-2 rounded shadow-sm ${style.aside}`}>
-            <img src={profilePhoto} alt="Profile photo" />
-            <div className='mt-1'>
-                <p className='textBlue fw-semibold'>{data.username}</p>
-                <p className='textGray'>{data.currentPlace}</p>
+            <div className={style.bio}>
+                <img src={profilePhoto} alt="Profile photo" />
+                <div className='mt-1'>
+                    <p className='textBlue fw-semibold'>{data.username}</p>
+                    <p className='textGray'>{data.currentPlace}</p>
+                </div>
+                <hr />
+                <a href="https://www.linkedin.com/in/gabrielsoarespebr/" target='_blank'>
+                    <img src="https://img.icons8.com/fluency/48/add-user-male.png" alt="add-user-male" />
+                    <p>
+                        Adicionar aos amigos
+                    </p>
+                </a>
+                <hr />
             </div>
-            <hr />
-            <a href="https://www.linkedin.com/in/gabrielsoarespebr/" target='_blank'>
-                <img src="https://img.icons8.com/fluency/48/add-user-male.png" alt="add-user-male" />
-                <p>
-                    Adicionar aos amigos
-                </p>
-            </a>
-            <hr />
             <nav className={style.navbar}>
                 <ul className='list-group list-unstyled'>
                     <li className='list-group-item p-0 d-flex align-items-center'>

@@ -1,3 +1,14 @@
+@media screen and (max-width: 700px) {
+    .scrap{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .scrap{
+        width: 100%;
+    }
+}
+
 .form {
     margin-bottom: 1em;
 }
@@ -36,8 +47,20 @@
     background-color: var(--turquoisePastel);
 }
 
-.scraps li img {
+.authorPhoto {
     width: 20%;
     height: 20%;
     object-fit: cover;
+}
+
+.myScrap{
+    width: 50%;
+
+    margin: 3vw;
+}
+
+@media screen and (max-width: 420px) {
+    .myScrap{
+        width: 80%;
+    }
 }

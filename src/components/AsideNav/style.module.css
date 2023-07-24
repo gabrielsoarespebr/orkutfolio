@@ -1,3 +1,28 @@
+@media screen and (max-width: 700px) {
+    .aside {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .aside {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .bio{
+        width: 42%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .aside nav{
+        width: 45%;
+    }
+}
+
 .aside a {
     text-decoration: none;
 

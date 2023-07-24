@@ -1,0 +1,16 @@
+@media screen and (max-width: 700px) {
+    .home {
+        width: 70%;
+        flex-direction: column;
+    }
+
+    .home>div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .home {
+        width: 100%;
+    }
+}

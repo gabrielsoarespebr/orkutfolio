@@ -1,11 +1,30 @@
-.descriptionContainer ul img{
+.descriptionContainer ul img {
     width: 1.5em;
 }
 
-.descriptionContainer table tr:nth-child(odd){
+.descriptionContainer table tr:nth-child(odd) {
     background-color: var(--blueLight);
 }
 
-.descriptionContainer table tr:nth-child(even){
+.descriptionContainer table tr:nth-child(even) {
     background-color: var(--turquoisePastel);
+}
+
+.descriptionContainer table tr>td:first-of-type{
+    text-align: end;
+}
+
+@media screen and (max-width: 420px) {
+    .descriptionContainer tr>td:first-of-type {
+        width: 100%;
+    }
+
+    .descriptionContainer tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .descriptionContainer table tr>td:first-of-type{
+        text-align:inherit;
+    }
 }

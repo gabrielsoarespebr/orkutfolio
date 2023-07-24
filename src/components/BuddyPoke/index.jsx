@@ -22,9 +22,9 @@ export const BuddyPoke = () => {
         <div className='w-full heightFitContent bg-white p-2 rounded shadow-sm'>
             <p className='fw-semibold mb-1'>buddypoke</p>
             <div className='d-flex justify-content-center'>
-                <img className='w-50' src={gif} alt="Buddy Poke" />
-                <div>
-                    <p className='fw-semibold'>Qual o seu humor hoje?</p>
+                <img className={`w-50 ${style.buddypoke}`} src={gif} alt="Buddy Poke" />
+                <div className={style.formWrapper}>
+                    <p className='fw-semibold'>Como está o seu humor hoje?</p>
                     <form className={style.form}>
                         <div>
                             <input className='align-middle' type="radio" name="mood" id={buddyPokeHappy} onChange={handleInputRadio} />
