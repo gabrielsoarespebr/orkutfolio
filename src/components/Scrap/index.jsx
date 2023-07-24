@@ -34,6 +34,8 @@ export const Scrap = () => {
             }, (error) => {
                 console.log(error.text);
             });
+
+            alert("Mensagem enviada.");
     };
 
     return (
