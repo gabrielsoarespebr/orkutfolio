@@ -80,6 +80,8 @@ export const UserProvider = ({ children }) => {
         },
         competitiveProgramming: {
             codeforces: "https://codeforces.com/profile/gabrielsoarespebr",
+            codesignal: "https://app.codesignal.com/profile/gabrielsoares",
+            codewars: "https://www.codewars.com/users/gabrielsoarespebr",
             hackerrank: "https://www.hackerrank.com/gabrielsoaresbr?hr_r=1",
             beecrowd: "https://www.beecrowd.com.br/judge/pt/profile/754752"
         },
