@@ -11,7 +11,7 @@ export const Skills = () => {
                 {data.skills.map((e, key) =>
                     <a className='text-decoration-none' key={key} href={e.website} target='_blank'>
                         <figure className='h-100 m-0 d-flex flex-column justify-content-around align-items-center'>
-                            <img src={e.logo} alt="Logo" />
+                            <img className='p-1' src={e.logo} alt="Logo" />
                             <figcaption className='textBlue fw-semibold text-center'>{e.title}</figcaption>
                         </figure>
                     </a>

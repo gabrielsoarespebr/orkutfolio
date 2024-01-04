@@ -6,18 +6,18 @@ export const UserProvider = ({ children }) => {
     const data = {
         username: 'Gabriel Soares',
         currentPlace: 'Olinda-PE, Brasil',
-        description: 'Desenvolvedor front-end React capaz de impulsionar seu produto/serviço de forma autêntica e criativa, simplificando a vida dos usuários. Nos bastidores: Compromisso com códigos limpos e otimizados, conforme as boas práticas de programação. Nos palcos: Proatividade, trabalho em equipe, além de comunicação clara e objetiva',
+        description: 'Desenvolvedor Front-End que valoriza a criatividade, objetividade e atenção aos detalhes. Possuo a capacidade de comunicar de modo eficaz, tanto oralmente quanto por escrito, em ambientes de trabalho em equipe. Meu foco é proporcionar a melhor experiência ao usuário, garantindo responsividade em interfaces atraentes, eficientes e funcionais, adaptadas para diferentes dispositivos',
         skills: [{
+            title: "Angular",
+            logo: "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/144/external-angular-a-typescript-based-open-source-web-application-framework-logo-shadow-tal-revivo.png"
+        },
+        {
             title: "React",
             logo: "https://img.icons8.com/color/144/react-native.png"
         },
         {
-            title: "Tailwind",
-            logo: "https://img.icons8.com/color/144/tailwind_css.png"
-        },
-        {
-            title: "Bootstrap",
-            logo: "https://img.icons8.com/color/144/bootstrap.png"
+            title: "TypeScript",
+            logo: "https://img.icons8.com/color/144/typescript--v1.png"
         },
         {
             title: "JavaScript",
@@ -30,6 +30,14 @@ export const UserProvider = ({ children }) => {
         {
             title: "CSS",
             logo: "https://img.icons8.com/color/144/css3.png"
+        },
+        {
+            title: "Tailwind",
+            logo: "https://img.icons8.com/color/144/tailwind_css.png"
+        },
+        {
+            title: "Bootstrap",
+            logo: "https://img.icons8.com/color/144/bootstrap.png"
         },
         {
             title: "Python",
