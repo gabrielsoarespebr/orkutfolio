@@ -64,7 +64,13 @@ export const UserProvider = ({ children }) => {
             logo: "https://img.icons8.com/color/144/canva.png"
         }
         ],
-        projects: [{
+        projects: [
+        {
+            title: "Vera Alencar Psicologia",
+            logo: "https://github.com/gabrielsoarespebr/vera-alencar-psicologia/blob/master/src/assets/images/emblem.png?raw=true",
+            website: "https://veraalencar.vercel.app"
+        },
+        {
             title: "Oferta Musical",
             logo: "https://github.com/gabrielsoarespebr/oferta-musical/blob/master/src/assets/favicon/ofertamusicalBRASAO.png?raw=true",
             website: "https://ofertamusical.vercel.app"
