@@ -9,6 +9,9 @@ import dojo1 from '../../assets/images/dojo1.png'
 import dojo2 from '../../assets/images/dojo2.png'
 import maratonaSBC1 from '../../assets/images/maratonaSBC1.png'
 import maratonaSBC2 from '../../assets/images/maratonaSBC2.jpg'
+import opei1 from '../../assets/images/opei1.jpg'
+import opei2 from '../../assets/images/opei2.jpg'
+
 
 export const Photos = () => {
     return (
@@ -58,7 +61,7 @@ export const Photos = () => {
 
                     <MDBCarouselItem
                         className='w-100 d-block'
-                        itemId={4}
+                        itemId={5}
                         src={maratonaSBC1}
                         alt='Maratona SBC 1'
                     >
@@ -68,12 +71,32 @@ export const Photos = () => {
 
                     <MDBCarouselItem
                         className='w-100 d-block'
-                        itemId={4}
+                        itemId={6}
                         src={maratonaSBC2}
                         alt='Maratona SBC 2'
                     >
                         <h5>Maratona SBC 2023 - Fase 1</h5>
                         <p>Etapa regional da competição de programação organizada pela Sociedade Brasileira de Computação, em setembro de 2023.</p>
+                    </MDBCarouselItem>
+
+                    <MDBCarouselItem
+                        className='w-100 d-block'
+                        itemId={7}
+                        src={opei1}
+                        alt='OPEI 2023 Sênior'
+                    >
+                        <h5>OPEI 2023</h5>
+                        <p>Medalha de bronze na Olimpíada Pernambucana de Informática (OPEI) 2023. Modalidade sênior, individual, representando o IFPE.</p>
+                    </MDBCarouselItem>
+
+                    <MDBCarouselItem
+                        className='w-100 d-block'
+                        itemId={8}
+                        src={opei2}
+                        alt='OPEI 2023 Sênior'
+                    >
+                        <h5>OPEI 2023</h5>
+                        <p>Medalha de bronze na Olimpíada Pernambucana de Informática (OPEI) 2023. Modalidade sênior, individual, representando o IFPE.</p>
                     </MDBCarouselItem>
                 </MDBCarousel>
             </div>
