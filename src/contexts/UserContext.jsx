@@ -72,25 +72,35 @@ export const UserProvider = ({ children }) => {
     ],
     projects: [
       {
+        title: "Almeida Santos Advogados",
+        logo: "https://github.com/gabrielsoarespebr/almeida-santos-advogados/blob/master/src/assets/images/favicon.png?raw=true",
+        website: "https://almeidasantosadvogados.vercel.app",
+      },
+      {
+        title: "Estácio Pedrosa Advogado",
+        logo: "https://github.com/gabrielsoarespebr/estacio-pedrosa-advogado/blob/master/public/assets/images/favicon.png?raw=true",
+        website: "https://estaciopedrosaadv.vercel.app/home",
+      },
+      {
+        title: "Avante Consórcio",
+        logo: "https://github.com/gabrielsoarespebr/avante-consorcio/blob/main/src/assets/images/favicon.png?raw=true",
+        website: "https://avanteconsorcio.vercel.app",
+      },
+      {
         title: "Vera Alencar Psicologia",
         logo: "https://github.com/gabrielsoarespebr/vera-alencar-psicologia/blob/master/src/assets/images/emblem.png?raw=true",
         website: "https://veraalencar.vercel.app",
       },
       {
-        title: "Oferta Musical",
-        logo: "https://github.com/gabrielsoarespebr/oferta-musical/blob/master/src/assets/favicon/ofertamusicalBRASAO.png?raw=true",
-        website: "https://ofertamusical.vercel.app",
-      },
-      {
-        title: "Better Call Saul",
-        logo: "https://github.com/gabrielsoarespebr/better-call-saul/blob/master/src/assets/images/BetterCallSaulLogo.png?raw=true",
-        website: "https://bettercallsaul.vercel.app",
+        title: "FitSister",
+        logo: "https://github.com/gabrielsoarespebr/parceira-de-treino/blob/main/src/assets/image/favicon.png?raw=true",
+        website: "https://fitsister.vercel.app",
       },
       {
         title: "Nostalgic Colors",
         logo: "https://github.com/gabrielsoarespebr/nostalgic-colors/blob/master/src/assets/icons/favIcon.png?raw=true",
         website: "https://nostalgiccolors.vercel.app",
-      },
+      }
     ],
     communication: {
       languages: ["Português", "Inglês", "Libras"],
