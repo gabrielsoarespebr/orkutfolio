@@ -118,8 +118,13 @@ export const UserProvider = ({ children }) => {
         ],
         workExperience: [
             {
-                title: 'React Developer',
-                organization: 'Autônomo',
+                title: 'Software Development Intern',
+                organization: 'Liferay',
+                dateStartEnd: ['out/2024']
+            },
+            {
+                title: 'Frontend Developer',
+                organization: 'Soarix Tech (freelancer)',
                 dateStartEnd: ['mar/2022']
             }],
         certifications: [
