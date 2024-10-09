@@ -6,7 +6,7 @@ export const UserProvider = ({ children }) => {
     const data = {
         username: 'Gabriel Soares',
         currentPlace: 'Olinda-PE, Brasil',
-        description: 'Desenvolvedor Front-End que valoriza a criatividade, objetividade e atenção aos detalhes. Possuo a capacidade de comunicar de modo eficaz, tanto oralmente quanto por escrito, em ambientes de trabalho em equipe. Meu foco é proporcionar a melhor experiência ao usuário, garantindo responsividade em interfaces atraentes, eficientes e funcionais, adaptadas para diferentes dispositivos',
+        description: 'Desenvolvedor autêntico e objetivo, capaz de se comunicar em equipe de forma eficiente, visando proporcionar a melhor experiência ao usuário através de interfaces atraentes, funcionais e responsivas',
         skills: [{
             title: "Angular",
             logo: "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/144/external-angular-a-typescript-based-open-source-web-application-framework-logo-shadow-tal-revivo.png"
