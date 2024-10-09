@@ -101,6 +101,11 @@ export const UserProvider = ({ children }) => {
         },
         educationalBackground: [
             {
+                title: 'Frontend React',
+                organization: 'CESAR School',
+                dateStartEnd: ['ago/2024', 'set/2024']
+            },
+            {
                 title: 'Desenvolvimento Front-End',
                 organization: 'Ada Tech',
                 dateStartEnd: ['dez/2022', 'abr/2023']
@@ -113,7 +118,7 @@ export const UserProvider = ({ children }) => {
             {
                 title: 'Análise e Desenvolvimento de Sistemas',
                 organization: 'IFPE',
-                dateStartEnd: ['mar/2022', 'jun/2025']
+                dateStartEnd: ['mar/2022', 'dez/2025']
             }
         ],
         workExperience: [
